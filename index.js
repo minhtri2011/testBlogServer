@@ -15,7 +15,7 @@ app.use(bodyParser.json({ limit: "30mb" }));
 app.use(bodyParser.urlencoded({ extended: true, limit: "30mb" }));
 app.use(cors());
 
-app.use("/posts", posts);
+app.use("/api/posts", posts);
 
 mongoose
   .connect(URL, { useNewUrlParser: true, useUnifiedTopology: true })
